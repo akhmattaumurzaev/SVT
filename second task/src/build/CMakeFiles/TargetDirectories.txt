@@ -1,0 +1,3 @@
+/home/a.taumurzaev/Desktop/SVT/2/src/build/CMakeFiles/rebuild_cache.dir
+/home/a.taumurzaev/Desktop/SVT/2/src/build/CMakeFiles/edit_cache.dir
+/home/a.taumurzaev/Desktop/SVT/2/src/build/CMakeFiles/main.dir
