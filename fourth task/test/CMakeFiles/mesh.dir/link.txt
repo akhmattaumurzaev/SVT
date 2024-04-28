@@ -1,0 +1,1 @@
+/opt/ohpc/pub/compiler/gcc/12.2.0/bin/c++ -rdynamic CMakeFiles/mesh.dir/mesh.cpp.o -o mesh   -L/home/a.taumurzaev/Desktop/SVT/2/INMOST/build  -Wl,-rpath,/home/a.taumurzaev/Desktop/SVT/2/INMOST/build /home/a.taumurzaev/Desktop/SVT/2/INMOST/build/libinmost.a 

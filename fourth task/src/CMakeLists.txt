@@ -8,8 +8,8 @@ link_directories(${INMOST_LIBRARY_DIRS})
 include_directories(${INMOST_INCLUDE_DIRS})
 add_definitions(${INMOST_DEFINITIONS})
 
-add_executable(main main.cpp)
+#add_executable(main main.cpp)
 add_executable(mesh mesh.cpp)
 
-target_link_libraries(main ${INMOST_LIBRARIES})
+#target_link_libraries(main ${INMOST_LIBRARIES})
 target_link_libraries(mesh ${INMOST_LIBRARIES})

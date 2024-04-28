@@ -7,7 +7,7 @@ double MESH_CENTER_Y = 2.746;
 using namespace INMOST;
 using namespace std;
 
-void make_node_count_tag(Mesh *m)
+void make_vec_to_center_tag(Mesh *m)
 {
 	Tag tagVectortoCenter = m->CreateTag("Vector_to_Center", DATA_REAL, CELL, NONE, 3);
 	for (Mesh::iteratorCell icell = m->BeginCell(); icell != m->EndCell(); icell++) {
@@ -38,7 +38,7 @@ double mesh_diam(Mesh* m)
 		double s_dist = dist_between_nodes(nodes[0], nodes[2]);
 		double t_dist = dist_between_nodes(nodes[1], nodes[2]);
 
-		int cell_diam = max(f_dist, s_dist, t_dist);
+		double cell_diam = max(max(f_dist, s_dist), t_dist);
 		if (cell_diam > max_diam) {
 			max_diam = cell_diam;
 		}
@@ -48,7 +48,7 @@ double mesh_diam(Mesh* m)
 
 void make_cells_count_tag(Mesh* m)
 {
-	Tag tagCoord = m->CreateTag("Cells count", DATA_REAL, NODE, NONE, 1);
+	Tag tagCoord = m->CreateTag("Cells count", DATA_INTEGER, NODE, NONE, 1);
 	for (Mesh::iteratorNode inode = m->BeginNode(); inode != m->EndNode(); inode++) {
 		Node node = inode->getAsNode();
 		node.Integer(tagCoord) = node.getCells().size();
@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
 	}
     Mesh *m = new Mesh;
 	m->Load(argv[1]);
-	make_node_count_tag(m);
+	make_cells_count_tag(m);
 	m->Save("res.vtk");
 	delete m;
-	cout << "Success!";
+	cout << "Success! \n";
 	return 0;
 }
