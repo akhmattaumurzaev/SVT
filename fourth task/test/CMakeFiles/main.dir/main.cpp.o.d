@@ -1,5 +1,6 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/a.taumurzaev/Desktop/SVT/2/src/main.cpp /usr/include/stdc-predef.h \
+ /home/a.taumurzaev/Desktop/temp/SVT/fourth\ task/src/main.cpp \
+ /usr/include/stdc-predef.h \
  /home/a.taumurzaev/Desktop/SVT/2/INMOST/Source/Headers/inmost.h \
  /home/a.taumurzaev/Desktop/SVT/2/INMOST/Source/Headers/inmost_common.h \
  /home/a.taumurzaev/Desktop/SVT/2/INMOST/build/inmost_options.h \

@@ -1,3 +1,4 @@
 /home/a.taumurzaev/Desktop/temp/SVT/fourth task/test/CMakeFiles/rebuild_cache.dir
 /home/a.taumurzaev/Desktop/temp/SVT/fourth task/test/CMakeFiles/edit_cache.dir
 /home/a.taumurzaev/Desktop/temp/SVT/fourth task/test/CMakeFiles/mesh.dir
+/home/a.taumurzaev/Desktop/temp/SVT/fourth task/test/CMakeFiles/main.dir

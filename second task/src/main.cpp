@@ -86,6 +86,13 @@ int main(int argc, char *argv[])
 
         std::cout << "N = " << N << std::endl;
         std::cout << "C_norm = " << C_norm(u_accurate, sol, N) << std::endl << "L_2_norm = " << L_2_norm(u_accurate, sol, N) << std::endl;
+        cout << "num.iters: " << S.Iterations() << endl;
+        cout << "prec.time: " << S.PreconditionerTime() << endl;
+        cout << "iter.time: " << S.IterationsTime() << endl;
+        if(!solved){
+            cout << "Linear solver failure!" << endl;
+            cout << "Reason: " << S.ReturnReason() << endl;
+        }
     }
 	return 0;
 }
